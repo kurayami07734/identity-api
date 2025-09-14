@@ -5,7 +5,7 @@ import { createClient } from '@libsql/client';
 import { contactTable } from './db/schema';
 
 const client = createClient({ url: process.env.DB_FILE_NAME! });
-const db = drizzle({ client });
+export const db = drizzle({ client });
 
 
 async function main() {
