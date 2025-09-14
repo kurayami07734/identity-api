@@ -1,0 +1,31 @@
+{
+  "name": "identity-api",
+  "version": "1.0.0",
+  "description": "Express.js + Zod + Drizzle based Rest API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kurayami07734/identity-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kurayami07734/identity-api/issues"
+  },
+  "homepage": "https://github.com/kurayami07734/identity-api#readme",
+  "dependencies": {
+    "@libsql/client": "^0.15.15",
+    "dotenv": "^17.2.2",
+    "drizzle-orm": "^0.44.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.4",
+    "tsx": "^4.20.5"
+  }
+}
