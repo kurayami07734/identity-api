@@ -4,7 +4,7 @@
   "description": "Express.js + Zod + Drizzle based Rest API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch src/app.ts"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
+    "@types/express": "^5.0.3",
     "drizzle-kit": "^0.31.4",
     "tsx": "^4.20.5"
   }
