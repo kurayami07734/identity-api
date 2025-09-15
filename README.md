@@ -2,11 +2,16 @@
 
 https://bitespeed.notion.site/Bitespeed-Backend-Task-Identity-Reconciliation-1fb21bb2a930802eb896d4409460375c
 
-
 ## Setup locally
 
 ```bash
 uv sync
+```
+
+### Generate seed data
+
+```bash
+python load_data.py
 ```
 
 ### Run locally
