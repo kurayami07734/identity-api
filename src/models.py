@@ -2,6 +2,7 @@ from enum import StrEnum
 from datetime import datetime
 from typing import Optional
 
+from pydantic import BaseModel, EmailStr
 from sqlmodel import Field, SQLModel
 
 from src.utils import get_utc_time
@@ -10,6 +11,22 @@ from src.utils import get_utc_time
 class LinkPrecedence(StrEnum):
     PRIMARY = "primary"
     SECONDARY = "secondary"
+
+
+class IdentifyRequest(BaseModel):
+    email: EmailStr | None = None
+    phoneNumber: str | None = None
+
+
+class ContactSubModel(BaseModel):
+    primaryContactId: int
+    emails: list[str | None]
+    phoneNumbers: list[str | None]
+    secondaryContactIds: list[int]
+
+
+class IdentifyResponse(BaseModel):
+    contact: ContactSubModel
 
 
 class Contact(SQLModel, table=True):
