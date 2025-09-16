@@ -1,0 +1,60 @@
+# --- Byte-compiled / optimized / C extensions ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Virtual Environments ---
+# It's best practice to recreate environments from a requirements file.
+.venv/
+venv/
+env/
+.env/
+
+# --- Environment Variables ---
+# Never commit your secrets!
+.env
+.env.*
+!.env.example
+
+# --- Database Files ---
+# Ignore local development databases.
+*.db
+*.sqlite3
+
+# --- Build, Distribution, and Packaging ---
+build/
+dist/
+*.egg-info/
+*.whl
+*.tar.gz
+
+# --- Test & Coverage Reports ---
+.pytest_cache/
+.coverage
+htmlcov/
+nosetests.xml
+coverage.xml
+
+# --- IDE / Editor-specific Files ---
+# VSCode
+.vscode/
+# PyCharm
+.idea/
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+# Vim
+*.swp
+
+# --- Log Files ---
+*.log
+
+# --- OS-specific Files ---
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+
+# --- Jupyter Notebook Checkpoints ---
+.ipynb_checkpoints/
